@@ -408,3 +408,14 @@ input::placeholder {
     text-decoration-thickness: 0%;
     color: #0266D6;
 }
+
+#passwordViwer {
+    width: 24px;
+    height: 24px;
+    transform: translate(720px,-50px);
+}
+
+#emailError,
+#passwordError {
+    color: red;
+}

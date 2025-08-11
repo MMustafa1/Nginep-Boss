@@ -160,7 +160,7 @@ body {
     height: 39px;
     font-family: 'Inter';
     font-weight: 600;
-    font-style:semi Bold;
+    font-style:Bold;
     font-size: 32px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -214,7 +214,6 @@ body {
     height: 18px;
     font-family: 'Inter';
     font-weight: 400;
-    font-style: Regular;
     font-size: 15px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -225,7 +224,6 @@ body {
 #linkDivSpan {
     font-family: 'Inter';
     font-weight: 400;
-    font-style: Regular;
     font-size: 15px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -249,7 +247,7 @@ label {
     height: 18px;
     font-family: 'Inter';
     font-weight: 600;
-    font-style: Semi Bold;
+    font-style: Bold;
     font-size: 15px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -289,7 +287,7 @@ label {
     gap: 20px;
 }
 
-.form {
+form {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -318,7 +316,6 @@ label {
     height: 18px;
     font-family: 'Inter';
     font-weight: 400;
-    font-style: Regular;
     font-size: 15px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -330,7 +327,6 @@ label {
 #TermsAndCondition {
     font-family: 'Inter';
     font-weight: 400;
-    font-style: Regular;
     font-size: 15px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -361,7 +357,6 @@ label {
 }
 
 #LowerDivButton2 {
-    cursor: pointer;
     width: 754px;
     height: 48px;
     gap: 8px;
@@ -371,6 +366,7 @@ label {
     padding-right: 24px;
     padding-bottom: 8px;
     padding-left: 24px;
+    opacity: 0.2;
     background: #0EAF52;
     border: 1px solid #00000033;
     box-shadow: 0px 1px 3px 0px #00000026;
@@ -389,7 +385,6 @@ input::placeholder {
     height: 18px;
     font-family: 'Inter';
     font-weight: 400;
-    font-style: Regular;
     font-size: 15px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -420,7 +415,6 @@ input::placeholder {
     height: auto;
     font-family: 'Inter';
     font-weight: 400;
-    font-style: Regular;
     font-size: 13px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -432,7 +426,6 @@ input::placeholder {
     height: auto;
     font-family: 'Inter';
     font-weight: 400;
-    font-style: Regular;
     font-size: 13px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -468,7 +461,6 @@ input::placeholder {
     height: 16px;
     font-family: 'Inter';
     font-weight: 400;
-    font-style: Regular;
     font-size: 13px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -476,4 +468,19 @@ input::placeholder {
     text-decoration-style: solid;
     text-decoration-thickness: 0%;
     color: #0266D6;
+}
+
+
+#nameError,
+#surNameError,
+#phoneNumberError,
+#emailError,
+#passwordError {
+    color: red;
+}
+
+#passwordViwer {
+    width: 24px;
+    height: 24px;
+    transform: translate(720px,-50px);
 }
