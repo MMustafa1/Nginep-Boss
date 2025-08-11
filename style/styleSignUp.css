@@ -1,0 +1,479 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-Black.otf) format(opentype);
+    font-weight:900;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-BlackItalic.otf) format(opentype);
+    font-weight:900;
+    font-style:italic;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-Bold.otf) format(opentype);
+    font-weight:700;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-BoldItalic.otf) format(opentype);
+    font-weight:700;
+    font-style:italic;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-ExtraBold.otf) format(opentype);
+    font-weight:800;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-ExtraBoldItalic.otf) format(opentype);
+    font-weight:800;
+    font-style:italic;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-ExtraLight.otf) format(opentype);
+    font-weight:200;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-ExtraLightItalic.otf) format(opentype);
+    font-weight:200;
+    font-style:italic;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-Italic.otf) format(opentype);
+    font-weight:400;
+    font-style:italic;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-Light.otf) format(opentype);
+    font-weight:300;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-LightItalic.otf) format(opentype);
+    font-weight:300;
+    font-style:italic;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-Medium.otf) format(opentype);
+    font-weight:500;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-MediumItalic.otf) format(opentype);
+    font-weight:500;
+    font-style:italic;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-Regular.otf) format(opentype);
+    font-weight:400;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-SemiBold.otf) format(opentype);
+    font-weight:600;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-SemiBoldItalic.otf) format(opentype);
+    font-weight:600;
+    font-style:italic;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-Thin.otf) format(opentype);
+    font-weight:100;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-ThinItalic.otf) format(opentype);
+    font-weight:100;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-V.ttf) format(truetype);
+    font-style:varible;
+}
+
+.MainDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    gap: 64px;
+}
+
+.MainDivInnerDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 169px;
+}
+
+.Lower-Div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.LowerDivTopInnerDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.LowerDivMainDiv1 {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+#SignUpHeading {
+    width: 754px;
+    height: 39px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-style:semi Bold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+}
+
+#LowerDivButton1 {
+    cursor: pointer;
+    width: 754px;
+    height: 48px;
+    gap: 8px;
+    border-radius: 8px;
+    border-width: 1px;
+    padding-top: 8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    background: #F5F5F5;
+    border: 1px solid #00000033;
+    box-shadow: 0px 1px 3px 0px #00000026;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+#Button1Span {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+}
+
+.LowerDivInnerDiv {
+    display: flex;
+    width: 754px;
+    height: 18px;
+    gap: 16px;
+}
+
+#DivSpan {
+    width: 223px;
+    height: 18px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color:black;
+}
+
+#linkDivSpan {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    color: #1097EB;
+}
+
+#LineBefore,
+#LineAfter {
+    width: 249.5PX;   
+    height: 0px;
+    border-width: 1px;
+    border: 1px solid #0000001A;
+}
+
+label {
+    width: 754px;
+    height: 18px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    gap:8px;
+}
+
+.NameForm input {
+    width: 335px;
+    height: 48px;
+    border-radius: 8px;
+    border-width: 1px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    background: #FFFFFF;
+    border: 1px solid #C1C1C1
+}
+
+.lowerForm input {
+    width: 725px;
+    height: 48px;
+    border-radius: 8px;
+    border-width: 1px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    background: #FFFFFF;
+    border: 1px solid #C1C1C1
+}
+
+.lowerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 760px;
+    gap: 20px;
+}
+
+.NameForm {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.NameLabel,
+.SurnameLabel {
+    flex: 1;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#SpanTerms {
+    width: 329px;
+    height: 18px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align:left;
+    margin: 0px;
+    padding: 0px;
+}
+
+#TermsAndCondition {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    color: #1097EB;
+}
+
+#checkbox {
+    width: 24px;
+    height: 24px;
+}
+
+.PhoneNoDiv,
+.EmailDiv,
+.PasswordDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.CheckBoxDiv {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+}
+
+#LowerDivButton2 {
+    cursor: pointer;
+    width: 754px;
+    height: 48px;
+    gap: 8px;
+    border-radius: 8px;
+    border-width: 1px;
+    padding-top: 8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    background: #0EAF52;
+    border: 1px solid #00000033;
+    box-shadow: 0px 1px 3px 0px #00000026;
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    columns:#FFFFFF;
+}
+
+input::placeholder {
+    width: 335px;
+    height: 18px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #00000059;
+}
+
+.Footer {
+    width: 1440px;
+    height: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-right: 32px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+}
+
+
+.FooterLeft {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#FooterLeftParagraph {
+    width: auto;
+    height: auto;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #00000059;
+}
+
+.FooterLeft a {
+    width: auto;
+    height: auto;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    color: #0266D6;
+}
+
+.FooterRight {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+}
+
+#Link1 {
+    width: 120px;
+    height: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    color:#0266D6;
+}
+
+#Link2 {
+    width: 86px;
+    height: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    color: #0266D6;
+}
