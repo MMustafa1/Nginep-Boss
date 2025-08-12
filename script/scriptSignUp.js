@@ -255,12 +255,12 @@ function showPassword()
     if(passwordIsHidden)
     {
         password.type="password";
-        passwordViwer.src="./asserts/Icons/ic-no-eye.png";
+        passwordViwer.src="../asserts/Icons/ic-no-eye.png";
     }
     else
     {
         password.type="text";
-        passwordViwer.src="./asserts/Icons/view-password.jpg";
+        passwordViwer.src="../asserts/Icons/view-password.jpg";
     }
     passwordIsHidden= !passwordIsHidden;
 }

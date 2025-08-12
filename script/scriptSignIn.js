@@ -1,24 +1,19 @@
 let form=document.querySelector("form");
 
 let EmailAddress = document.getElementById("EmailAddress");
-console.log(EmailAddress);
 let password = document.getElementById("password");
 
 let emailError=document.getElementById("emailError");
 let passwordError=document.getElementById("passwordError");
 
-const emailMethod= /^[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+const emailMethod= /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
 
-form.addEventListener("submit", function(e){
+form.addEventListener("submit",function(e){
     e.preventDefault();
-    let EmailAddress = document.getElementById("EmailAddress").value;
-    console.log(EmailAddress);
-    console.log(password);
-    Login(document.getElementById("EmailAddress").value,password.value);
+    Login(EmailAddress.value.trim(),password.value.trim());
 });
 
 function Login(email,password) {
-    console.log(email);
     if(!emailMethod.test(email))
     {
         emailError.innerHTML="Invalid Email format";
@@ -29,11 +24,11 @@ function Login(email,password) {
     .then(response => response.json())
     .then (data=> {
         if(data.length ===0) {
-            emailError="Email not found";
+            emailError.innerHTML="Email not found";
             return;
         }
         const user= data[0];
-        if(user.password===password)
+        if(user.Password===password)
         {
             console.log("Successfully login");
             alert("Successfully login");
@@ -41,7 +36,7 @@ function Login(email,password) {
         }
         else
         {
-            passwordError.innerHTML("Password not correct");
+            passwordError.innerHTML="Password not correct";
             return;
         }
     })

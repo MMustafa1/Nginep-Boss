@@ -18,7 +18,7 @@
                     </div>
                     <div class="LowerDivInnerDiv">
                         <hr id="LineBefore">
-                        <span id="DivSpan">Don't have account ? <a id="linkDivSpan" href="../SignUp.html">Sign Up</a></span>
+                        <span id="DivSpan">Don't have account ? <a id="linkDivSpan" href="./SignUp.html">Sign Up</a></span>
                         <hr id="LineAfter">
                     </div>
                 </div>
@@ -37,7 +37,8 @@
                         </div>
                     </div>
                 </form>
-                <button id="LowerDivButton2" onclick="Login()">Log In</button>
+                <button id="LowerDivButton2" onclick="Login(document.getElementById('EmailAddress').value.trim(),
+    document.getElementById('password').value.trim())">Log In</button>
             </div>
             <div class="Footer">
                 <div class="FooterLeft">
