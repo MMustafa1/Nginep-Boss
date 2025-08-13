@@ -3,10 +3,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .Section1MainDiv {
-    width: 1660px;
+    width: 1440px;
     height: 908px;
     display: flex;
     flex-direction: column;
@@ -17,7 +18,7 @@ body {
 }
 
 .NavBar {
-    width: 1660px;
+    width: 1440px;
     height: 82px;
     border-radius: 30px;
     display: flex;
@@ -90,16 +91,17 @@ body {
 
 .Section1LowerDiv {
     display: flex;
-    width: 1660px;
+    width: 1440px;
     height: 774px;
     background-image: url("../asserts/Images/image\ 1.png");
     border-radius: 30px;
 }
 
 .Section1LeftInnerDiv2Outer {
+    transform: translateX(60px);
     padding-top: 20px;
     background-color: white;
-    width: 834px;
+    width: 780px;
     border-radius: 0px 20px;
     height: 151px;
 }
@@ -290,7 +292,7 @@ body {
 
 .Section2MainDiv {
     transform: translateY(142px);
-    width: 1482px;
+    width: 1440px;
     height: 612px;
     display: flex;
     flex-direction: column;
@@ -312,9 +314,9 @@ body {
 }
 
 .Section2MainInnerDiv {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 418px;
 }
 
 #Section2Spam1 {
@@ -431,7 +433,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1692px;
+    width: 1440px;
     height: 1056px;
     gap: 121px;
 }
@@ -469,8 +471,15 @@ body {
 }
 
 .Section3MainInnerDiv {
+    width: 100%;
     display: flex;
     gap: 63px;
+    overflow-x: hidden;
+    justify-content: center;
+}
+
+.Section3Div1:nth-child(n+4) {
+    display: none;
 }
 
 .Section3Buttons {
@@ -485,12 +494,12 @@ body {
 }
 
 #Section3Div1img {
-    width: 522px;
+    width: 480px;
     height: 435px;
 }
 
 .Section3Div1MainDiv1 {
-    width: 522px;
+    width: 480px;
     height: 284px;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -523,7 +532,7 @@ body {
     line-height: 100%;
     letter-spacing: 0%;
     color: #000000;
-    transform: translateX(45px);
+    transform: translateX(25px);
 }
 
 #Section3Div1Logo2 {
@@ -552,7 +561,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    transform: translateX(45px);
+    transform: translateX(25px);
 }
 
 
@@ -562,7 +571,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1661px;
+    width: 1440px;
     height: 834px;
     gap: 90px;
 }
@@ -616,12 +625,12 @@ body {
 }
 
 #Section4Div1img {
-    width: 517px;
+    width: 480px;
     height: 335px;
 }
 
 .Section4Div1MainDiv1 {
-    width: 517px;
+    width: 480px;
     height: 264px;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -635,7 +644,7 @@ body {
 .Section4Div1MainInnerDiv {
     display: flex;
     flex-direction: column;
-    transform: translate(36px,10px);
+    transform: translate(28px,10px);
 }
 
 #Section4Div1Button1 {
@@ -703,14 +712,15 @@ body {
 }
 
 .Section5MainDiv {
-    overflow-x: hidden;
+    overflow: hidden;
     transform: translateY(776px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1921px;
-    height: 774px;
+    width: 1440px;
+    height: 870px;
+    gap: 130px;
 }
 
 #Section5Heading1 {
@@ -745,6 +755,7 @@ body {
 }
 
 .Section5InnerDivButtons {
+    transform: translateX(120px);
     width: 160px;
     height: 63px;
     border-width: 4px;
@@ -756,7 +767,11 @@ body {
     display: flex;
     align-items: center;
     gap: 24px;
-    transform: translateX(34px);
+    transform: translate(34px,15px);
+}
+
+.centered {
+    transform: translateY(-30px);
 }
 
 #Section5Button1,
@@ -767,7 +782,7 @@ body {
 }
 
 .Section5InnerDiv2 {
-    width: 1088px;
+    width: 770px;
     height: 467px;
     border-radius: 30px;
     background: #D9D9D9;
@@ -802,15 +817,14 @@ body {
 }
 
 #Section5InnerDiv2Text2 {
-    width: 1000px;
+    width: 750px;
     height: 137px;
     font-family: Lato;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 126%;
-    letter-spacing: 0%;
     color: #000000;
-    transform: translateX(34px);
+    transform: translate(34px,15px);
 }
 
 .Section5InnerDiv3 {
@@ -842,3 +856,305 @@ body {
     letter-spacing: 0%;
     color: #000000;
 }
+
+.Section6MainDiv {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 165px;
+    transform: translateY(896px);
+    width: 1440px;
+    height: 774px;
+    border: 6px solid #FFFFFF;
+    background-color:#1C1B1F;
+}
+
+.Section6InnerDiv1 {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(50px);
+    justify-content: center;
+}
+
+.Footer {
+    display: flex;
+    transform: translateY(103px);
+    gap: 100px;
+}
+
+.Section6InnerDiv2,
+.Section6InnerDiv3,
+.Section6InnerDiv4 {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.Section6InnerDiv2Links,
+.Section6InnerDiv3Links,
+.Section6InnerDiv4Links {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#Section6Heading1 {
+    width: 385px;
+    height: 91px;
+    font-family: Lato;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 64px; 
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+#Section6Span1 {
+    font-family: Lato;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFA800;
+}
+
+#Section6Text1 {
+    transform: translateY(-60px);
+    width: 560px;
+    height: 124px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+}
+
+.Section6InnerDiv1Content {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+
+.Section6InnerDiv1Imgs {
+    transform: translateY(-50px);
+    display: flex;
+    gap: 19.3px;
+    width: 398px;
+    height: 85px;
+}
+
+#Section6Img {
+    transform: translate(16.5px,15px);
+    width: 54px;
+    height: 53px;
+}
+
+.Section6ImgDiv {
+    width: 86px;
+    height: 85px;
+    background-color: #FFA800;
+    border-radius: 50%;
+}
+
+.Section6OuterDiv2 {
+    transform: translateY(10px);
+    display: flex;
+    gap: 8px;
+}
+
+#Section6InnerDiv2Heading {
+    width: 167px;
+    height: 51px;
+    font-family: Lato;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+#Section6InnerDiv2Link1 {
+    width: 101px;
+    height: 50px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+}
+
+#Section6InnerDiv2Link2 {
+    width: 121px;
+    height: 50px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+#Section6InnerDiv2Link3 {
+    width: 146px;
+    height: 50px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+}
+
+#Section6InnerDiv2Link4 {
+    width: 176px;
+    height: 50px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+#Section6InnerDiv3Heading {
+    width: 167px;
+    height: 51px;
+    font-family: Lato;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+}
+
+#Section6InnerDiv3Link1 {
+    width: 206px;
+    height: 50px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+#Section6InnerDiv3Link2 {
+    width: 289px;
+    height: 50px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+}
+
+#Section6InnerDiv3Link3 {
+    width: 310px;
+    height: 50px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+}
+
+#Section6InnerDiv3Link4 {
+    width: 210px;
+    height: 50px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+}
+
+#Section6InnerDiv4Heading {
+    width: 167px;
+    height: 51px;
+    font-family: Lato;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+}
+
+#Section6InnerDiv4Link1 {
+    width: 263px;
+    height: 50px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+}
+
+#Section6InnerDiv4Link2 {
+    width: 289px;
+    height: 50px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Section6BottomFooterDiv {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+
+#Section6Line {
+    width: 1350px;
+    height: 0px;
+    border-width: 6px;
+    border: 6px solid #FFFFFF
+}
+
+.Section6InnerBottomDiv {
+    width: 1440px;
+    display: flex;
+    justify-content:space-between;
+    transform: translate(40px,-10px);
+}
+
+#Section6InnerBottomDivText1 {
+    width: 761px;
+    height: 48px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+}
+
+#Section6InnerBottomDivText2 {
+    width: 570px;
+    height: 48px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+}
+
+
