@@ -4,7 +4,8 @@ body {
     align-items: center;
     flex-direction: column;
     overflow-x: hidden;
-}
+    font-family: 'Lato';
+}   
 
 .Section1MainDiv {
     width: 1440px;

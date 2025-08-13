@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Inter';
+    overflow: hidden;
 }
 
 .Asider {
@@ -148,7 +148,6 @@ body {
 #DashBoardTopRightDivImg1,
 #DashBoardTopRightDivImg2,
 #DashBoardTopRightDivImg3 {
-    cursor: pointer;
     width: 48px;
     height: 48px;
 }
@@ -169,152 +168,64 @@ body {
 }
 
 .DashBoardBottom {
-    transform: translateY(39px);
-    gap: 40px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 996px;
-    height: 1204px;
+    height: 600px;
+    gap: 20px;
     background: #FFFFFF;
 }
 
-.DashBoardBottomInnerDiv1 {
-    transform:translateX(20px) ;
-    width: 300px;
-    height: 872px;
-    border-radius: 30px;
-    background: #EFEFEF;
+.DashBoardBottomDiv1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 754px;
+    height: 74px;
+    gap: 8px;
 }
 
-.DashBoardBottomInnerMainDiv2 {
-    transform:translateX(20px) ;
-    width: 300px;
-    height: 632px;
-    border-radius: 30px;
-    background: #EFEFEF;
-}
-
-.DashBoardBottomInnerMainDiv3 {
-    transform:translateX(20px) ;
-    width: 300px;
-    height: 632px;
-    border-radius: 30px;
-    background: #EFEFEF;
-}
-
-#DashBoardBottomHeading1 {
-    padding-top: 10px;
-    padding-left: 20px;
-    width: 290px;
-    height: 24px;
-    font-family: Poppins;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 30px;
-    line-height: 24px;
-    letter-spacing: 0px;
+#items {
+    width: 754px;
+    height: 18px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-size: 20px;
     color:#000000;
 }
 
-#DashBoardBottomImg1 {
-    padding-right: 20px;
-    padding-top: 10px;
-    width: 24px;
-    height: 24px;
+#items:focus,
+#itemsInput:focus {
+    outline: none;
 }
 
-.DashBoardBottomInnerDiv1Content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.DashBoardBottomInnerDiv2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transform: translateX(10px);
-    width: 280px;
-    height: 216px;
-    border-radius: 12px;
-    border-width: 1px;  
-    background: #FFFFFF;
-    border: 1px solid #F3F3F3
-}
-
-.DashBoardBottomInnerDiv2Innerimg {
-    transform: translateX(15px);
-    width: 250px;
-    height: 108px;
+#itemsInput {
+    width: 554px;
+    font-size: 20px;
+    height: 40px;
+    gap: 8px;
     border-radius: 8px;
-    background: #DEDEDE;
+    border-width: 1px;
+    background: #FFFFFF;
+    border: 1px solid #C1C1C1;
 }
 
-#DashBoardBottomInnerDiv2Text1 {
-    padding-left: 15px;
-    width: 250px;
-    height: 22px;
-    font-family: DM Sans;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: -0.4px;
-    color: #171717;
-}
-
-.DashBoardBottomInnerDiv2imgs {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 15px;
-}
-
-#DashBoardBottomInnerDivimg1 {
-    width: 12px;
-    height: 14px;
-}
-
-#DashBoardBottomInnerDivimg2 {
-    padding-right: 15px;
-    width: 14px;
-    height: 14px;
-}
-
-.DashboardInnerDivs3 {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-#DashBoardBottomInnerDiv3img1 {
-    width: 24px;
-    height: 24px;
-}
-
-#DashBoardBottomInnerDiv3text {
-    width: 140px;
-    height: 24px;
+.DashBoardBottomButton {
+    transform: translateX(-100px);
+    width: 300px;
+    height: 48px;
+    opacity: 0.15;
+    border-radius: 8px;
+    background: #000000;
     font-family: Poppins;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #93989A;
-}
-
-#DashBoardBottomInnerDiv3img2 {
-    padding-right: 20px;
-    width: 24px;
-    height: 24px;
-}
-
-.DashBoardBottomInnerDiv3Inner {
-    display: flex;
-    align-items: center;
-    padding-left: 15px;
-    gap: 12px;
-}
-
-.DashBoardBottomInnerDiv3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    letter-spacing: 0%;
+    color:#FFFFFF;
 }
