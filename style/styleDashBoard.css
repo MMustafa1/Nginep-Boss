@@ -1,0 +1,318 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Asider {
+    width: 444px;
+    height: 1300px;
+    border-right-width: 1px;
+    padding-top: 40px;
+    padding-bottom: 48px;
+    gap: 32px;
+    background: #FFFFFF;
+    border-right: 1px solid #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.AsiderInnerDiv1 {
+    display: flex;
+    width: 440px;
+    height: 80px;
+    justify-content:space-between;
+    align-items: center;
+    gap:154px;
+}
+
+#AsiderImg1 {
+    width: 202px;
+    padding-left:10px ;
+    height: 40px;
+}
+
+#AsiderImg2 {
+    padding-right: 20px;
+    width: 32px;
+    height: 32px;
+}
+
+.AsiderInnerDiv2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 440px;
+    height: 64px;
+    border-right-width: 4px;
+    gap: 28px;
+    background: #F5F7FF;
+    border-right: 4px solid #007DFC
+}
+
+#AsiderImg3 {
+    width: 28px;
+    height: 28px;
+}
+
+#AsiderText1 {
+    width: 332px;
+    height: 24px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #007DFC;
+}
+
+.AsiderInnerDiv3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 440px;
+    height: 64px;
+    border-right-width: 4px;
+    background-color:#F5F7FF;
+    border-right: 4px solid #000000;
+    gap:37px;
+}
+
+#AsiderImg4 {
+    width: 24px;
+    height: 24px;
+}
+
+#AsiderText2 {
+    width: 332px;
+    height: 24px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color:#000000;
+}
+
+.DashBoardTop {
+    width: 996px;
+    height: 96px;
+    background: #FFFFFF;
+}
+
+#SearchBar {
+    width: 411px;
+    height: 40px;
+    gap: 10px;
+    border-radius: 12px;
+    background: #F7F7F7;
+    font-size: 20px;
+    padding-left: 40px;
+    border-style: none;
+}
+
+#SearchBar:focus {
+    outline: none;
+}
+
+#SearchBar::placeholder {
+    width: 191px;
+    height: 24px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -1%;
+    color: #A2A5B1;
+}
+
+#SearchBarimg {
+    width: 24px;
+    height: 24px;
+    transform: translateX(35px);
+}
+
+.DashBoardTopRightDiv {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    width: 285px;
+    height: 48px;
+}
+
+#DashBoardTopRightDivImg1,
+#DashBoardTopRightDivImg2,
+#DashBoardTopRightDivImg3 {
+    width: 48px;
+    height: 48px;
+}
+
+.UserDashboard {
+    display: flex;
+}
+
+.DashBoardTopLeftDiv {
+    display: flex;
+    align-items: center;
+}
+
+.DashBoardTop {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.DashBoardBottom {
+    transform: translateY(39px);
+    gap: 40px;
+    display: flex;
+    width: 996px;
+    height: 1204px;
+    background: #FFFFFF;
+}
+
+.DashBoardBottomInnerDiv1 {
+    transform:translateX(20px) ;
+    width: 300px;
+    height: 872px;
+    border-radius: 30px;
+    background: #EFEFEF;
+}
+
+.DashBoardBottomInnerMainDiv2 {
+    transform:translateX(20px) ;
+    width: 300px;
+    height: 632px;
+    border-radius: 30px;
+    background: #EFEFEF;
+}
+
+.DashBoardBottomInnerMainDiv3 {
+    transform:translateX(20px) ;
+    width: 300px;
+    height: 632px;
+    border-radius: 30px;
+    background: #EFEFEF;
+}
+
+#DashBoardBottomHeading1 {
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 290px;
+    height: 24px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color:#000000;
+}
+
+#DashBoardBottomImg1 {
+    padding-right: 20px;
+    padding-top: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.DashBoardBottomInnerDiv1Content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.DashBoardBottomInnerDiv2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(10px);
+    width: 280px;
+    height: 216px;
+    border-radius: 12px;
+    border-width: 1px;  
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3
+}
+
+.DashBoardBottomInnerDiv2Innerimg {
+    transform: translateX(15px);
+    width: 250px;
+    height: 108px;
+    border-radius: 8px;
+    background: #DEDEDE;
+}
+
+#DashBoardBottomInnerDiv2Text1 {
+    padding-left: 15px;
+    width: 250px;
+    height: 22px;
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+    color: #171717;
+}
+
+.DashBoardBottomInnerDiv2imgs {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+#DashBoardBottomInnerDivimg1 {
+    width: 12px;
+    height: 14px;
+}
+
+#DashBoardBottomInnerDivimg2 {
+    padding-right: 15px;
+    width: 14px;
+    height: 14px;
+}
+
+.DashboardInnerDivs3 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#DashBoardBottomInnerDiv3img1 {
+    width: 24px;
+    height: 24px;
+}
+
+#DashBoardBottomInnerDiv3text {
+    width: 140px;
+    height: 24px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #93989A;
+}
+
+#DashBoardBottomInnerDiv3img2 {
+    padding-right: 20px;
+    width: 24px;
+    height: 24px;
+}
+
+.DashBoardBottomInnerDiv3Inner {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    gap: 12px;
+}
+
+.DashBoardBottomInnerDiv3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

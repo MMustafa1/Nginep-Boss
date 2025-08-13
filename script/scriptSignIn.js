@@ -32,7 +32,7 @@ function Login(email,password) {
         {
             console.log("Successfully login");
             alert("Successfully login");
-            window.location.href="";
+            window.location.href="./DashBoard.html";
         }
         else
         {

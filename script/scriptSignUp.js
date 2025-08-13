@@ -238,6 +238,7 @@ function SignUp()
         .then(data => {
             console.log("User saved", data);
             alert("Successfully Signed Up.");
+            window.location.href="./DashBoard.html";
             form.reset();
         })
         .catch(err => {

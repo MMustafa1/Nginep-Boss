@@ -473,9 +473,11 @@ body {
 .Section3MainInnerDiv {
     width: 100%;
     display: flex;
-    gap: 63px;
-    overflow-x: hidden;
+    overflow: hidden;
+    gap: 35px;
     justify-content: center;
+    scroll-behavior: smooth;
+    scrollbar-width: none; 
 }
 
 .Section3Div1:nth-child(n+4) {
@@ -602,7 +604,7 @@ body {
 
 .Section4Main3Div {
     display: flex;
-    gap: 55px;
+    gap: 35px;
 }
 
 .Section4Div1InnerDiv1 {
