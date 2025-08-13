@@ -110,3 +110,15 @@ prevTestimonialBtn.addEventListener("click", movePrevTestimonial);
 // Initial center highlight
 updateCenterCard();
 
+let isLogin=false;
+
+function PageChange() {
+    if(isLogin)
+    {
+        window.location.href="./Pages/DashBoard.html";
+    }
+    else
+    {
+        window.location.href="./Pages/SignIn.html";
+    }
+}
