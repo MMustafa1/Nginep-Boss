@@ -236,6 +236,7 @@ function SignUp()
             return res.json();
         })
         .then(data => {
+            localStorage.setItem("userId", data.id);
             console.log("User saved", data);
             alert("Successfully Signed Up.");
             window.location.href="./DashBoard.html";

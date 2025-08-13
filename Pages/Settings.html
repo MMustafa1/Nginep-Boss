@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
-    <link rel="stylesheet" href="../style/styleAddTask.css">
+    <link rel="stylesheet" href="../style/styleSettings.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,6 +23,52 @@
                     <p id="AsiderText2">Add Item</p>
                 </div>
             </div>
+
+            <div class="Dashboard">
+                <form class="DashBoardBottom">
+                    <div class="DashBoardBottomDiv1">
+                        <label id="name" for="name">Name</label>
+                        <div class="DashBoardBottomDiv1Inner">
+                            <input type="text" id="nameInput" disabled>
+                            <button id="EditButtonName" type="button">🖊️</button>
+                        </div>
+                    </div>
+                    <div class="DashBoardBottomDiv1">
+                        <label id="surname" for="surname">Surname</label>
+                        <div class="DashBoardBottomDiv1Inner">
+                            <input type="text" id="SurnameInput" disabled>
+                            <button id="EditButtonSurName" type="button">🖊️</button>
+                        </div>
+                    </div>
+                    <div class="DashBoardBottomDiv1">
+                        <label id="phoneNumber" for="phoneNumber">Phone Number</label>
+                        <div class="DashBoardBottomDiv1Inner">
+                            <input type="phonenumber" id="phoneNumberInput" disabled>
+                            <button id="EditButtonPhone" type="button">🖊️</button>
+                        </div>
+                    </div>
+                    <div class="DashBoardBottomDiv1">
+                        <label id="emailAddress" for="emailAddress">Email Address</label>
+                        <div class="DashBoardBottomDiv1Inner">
+                            <input type="text" id="emailAddressInput" disabled>
+                            <button id="EditButtonEmail" type="button">🖊️</button>
+                        </div>
+                    </div>
+                    <div class="DashBoardBottomDiv1">
+                        <label id="password" for="password">Password</label>
+                        <div class="DashBoardBottomDiv1Inner">
+                            <input type="password" id="passwordInput" disabled>
+                            <button id="EditButtonPassword" type="button">🖊️</button>
+                        </div>
+                    </div>
+                    <div class="Buttons">
+                    <button id="FormCancelButton" onclick="cancel()"> Cancel </button>
+                    <button id="FormSaveButton" onclick="save()"> Save </button>
+                    </div>
+                </form>
+            </div>
         </div>
+
+        <script src="../script/scriptSettings.js"></script>
 </body>
 </html>

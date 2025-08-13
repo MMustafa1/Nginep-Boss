@@ -7,6 +7,14 @@
       "PhoneNumber": "123234345",
       "EmailAddress": "Ali123@gmail.com",
       "Password": "123212312"
+    },
+    {
+      "Name": "Ahmad",
+      "Surname": "Hassan",
+      "PhoneNumber": "03218987231",
+      "EmailAddress": "Hassan@gmail.com",
+      "Password": "123456789",
+      "id": "c0b0"
     }
   ]
 }

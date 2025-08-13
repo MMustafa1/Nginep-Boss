@@ -30,6 +30,7 @@ function Login(email,password) {
         const user= data[0];
         if(user.Password===password)
         {
+            localStorage.setItem("userId", user.id);
             console.log("Successfully login");
             alert("Successfully login");
             window.location.href="./DashBoard.html";
