@@ -157,45 +157,6 @@ EmailAddress.addEventListener("blur", function() {
         emailError.innerHTML="";
     }
 
-    const emailToCheck = EmailAddress.value.trim().toLowerCase();
-
-fetch(`http://localhost:3000/users?email=${encodeURIComponent(emailToCheck)}`)
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log("API Response:", data); // Debug log
-        
-        // Ensure data is an array
-        if (!Array.isArray(data)) {
-            throw new Error("Invalid response format");
-        }
-        
-        // Check if any email matches EXACTLY (case-insensitive)
-        const exactMatch = data.find(user => 
-            user.email && user.email.trim().toLowerCase() === emailToCheck
-        );
-        
-        if (exactMatch) {
-            emailError.innerHTML = "Email already registered";
-            emailError.style.color = "red";
-            valid = false;
-        } else {
-            emailError.innerHTML = "✓ Email available";
-            emailError.style.color = "green";
-            valid = true;
-        }
-    })
-    .catch(err => {
-        console.error("Error checking email:", err);
-        emailError.innerHTML = "Server error. Please try again later.";
-        emailError.style.color = "red";
-        valid = false;
-    });
-
     fetch(`http://localhost:3000/users?email=${encodeURIComponent(EmailAddress.value)}`)
     .then (response => response.json())
     .then (data => {

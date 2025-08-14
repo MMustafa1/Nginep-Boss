@@ -1,8 +1,21 @@
+/* Prevent horizontal scroll */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 @font-face {
@@ -125,14 +138,16 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1400px;
+    max-width: 800px; /* Reduced from 1400px */
     gap: 64px;
+    padding: 0 20px;
 }
 
 .MainDivInnerDiv {
     display: flex;
     flex-direction: column;
     gap: 169px;
+    width: 100%;
 }
 
 .Lower-Div {
@@ -141,28 +156,32 @@ body {
     justify-content: center;
     align-items: center;
     gap: 48px;
+    width: 100%;
 }
 
 .LowerDivTopInnerDiv {
     display: flex;
     flex-direction: column;
     gap: 64px;
+    width: 100%;
 }
 
 .LowerDivMainDiv1 {
     display: flex;
     flex-direction: column;
     gap: 48px;
+    width: 100%;
 }
 
 #SignUpHeading {
-    width: 754px;
-    height: 39px;
+    width: 100%; /* Changed from fixed 754px */
+    max-width: 754px;
+    height: auto; /* Changed from fixed height */
     font-family: 'Inter';
     font-weight: 600;
-    font-style:semi Bold;
-    font-size: 32px;
-    line-height: 100%;
+    font-style: normal;
+    font-size: clamp(24px, 4vw, 32px); /* Responsive font size */
+    line-height: 120%;
     letter-spacing: 0%;
     text-align: center;
     color: #000000;
@@ -170,21 +189,19 @@ body {
 
 #LowerDivButton1 {
     cursor: pointer;
-    width: 754px;
+    width: 100%; /* Changed from fixed 754px */
+    max-width: 754px;
     height: 48px;
     gap: 8px;
     border-radius: 8px;
     border-width: 1px;
-    padding-top: 8px;
-    padding-right: 24px;
-    padding-bottom: 8px;
-    padding-left: 24px;
+    padding: 8px 24px; /* Simplified padding */
     background: #F5F5F5;
     border: 1px solid #00000033;
     box-shadow: 0px 1px 3px 0px #00000026;
     font-family: 'Inter';
     font-weight: 500;
-    font-style: Medium;
+    font-style: normal;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -194,7 +211,7 @@ body {
 #Button1Span {
     font-family: 'Inter';
     font-weight: 700;
-    font-style: Bold;
+    font-style: normal;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -204,27 +221,29 @@ body {
 
 .LowerDivInnerDiv {
     display: flex;
-    width: 754px;
-    height: 18px;
+    width: 100%; /* Changed from fixed 754px */
+    max-width: 754px;
+    height: auto; /* Changed from fixed height */
     gap: 16px;
+    align-items: center;
 }
 
 #DivSpan {
-    width: 230px;
-    height: 18px;
+    flex: 0 0 auto;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 15px;
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
-    color:black;
+    color: black;
+    white-space: nowrap;
 }
 
 #linkDivSpan {
     font-family: 'Inter';
     font-weight: 400;
-    font-style: Regular;
+    font-style: normal;
     font-size: 15px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -237,49 +256,49 @@ body {
 
 #LineBefore,
 #LineAfter {
-    width: 249.5PX;   
+    flex: 1; /* Changed from fixed width to flexible */
     height: 0px;
     border-width: 1px;
     border: 1px solid #0000001A;
 }
 
 label {
-    width: 754px;
-    height: 18px;
+    width: 100%; /* Changed from fixed 754px */
+    max-width: 754px;
+    height: auto; /* Changed from fixed height */
     font-family: 'Inter';
     font-weight: 600;
-    font-style: Semi Bold;
+    font-style: normal;
     font-size: 15px;
     line-height: 100%;
     letter-spacing: 0%;
     color: #000000;
-    gap:8px;
+    gap: 8px;
 }
 
 .lowerForm input {
-    width: 725px;
+    width: 100%; /* Changed from fixed 725px */
     height: 48px;
+    min-width: 450px;
     border-radius: 8px;
     border-width: 1px;
-    padding-top: 8px;
-    padding-right: 16px;
-    padding-bottom: 8px;
-    padding-left: 16px;
+    padding: 8px 16px; /* Simplified padding */
     background: #FFFFFF;
-    border: 1px solid #C1C1C1
+    border: 1px solid #C1C1C1;
 }
 
 .lowerForm {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 
 .form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 760px;
+    max-width: 754px; /* Changed from 760px to match other elements */
     gap: 20px;
 }
 
@@ -288,38 +307,36 @@ label {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
+    position: relative; /* Added for password viewer positioning */
 }
 
 #LowerDivButton2 {
     cursor: pointer;
-    width: 754px;
+    width: 100%; /* Changed from fixed 754px */
+    max-width: 754px;
     height: 48px;
     gap: 8px;
     border-radius: 8px;
     border-width: 1px;
-    padding-top: 8px;
-    padding-right: 24px;
-    padding-bottom: 8px;
-    padding-left: 24px;
+    padding: 8px 24px; /* Simplified padding */
     background: #0EAF52;
     border: 1px solid #00000033;
     box-shadow: 0px 1px 3px 0px #00000026;
     font-family: Inter;
     font-weight: 700;
-    font-style: Bold;
+    font-style: normal;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
-    columns:#FFFFFF;
+    color: #FFFFFF; /* Fixed from 'columns' to 'color' */
 }
 
 input::placeholder {
-    width: 335px;
-    height: 18px;
     font-family: 'Inter';
     font-weight: 400;
-    font-style: Regular;
+    font-style: normal;
     font-size: 15px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -327,22 +344,20 @@ input::placeholder {
 }
 
 .Footer {
-    width: 1440px;
-    height: 0px;
+    width: 100%; /* Changed from fixed 1440px */
+    max-width: 1440px;
+    height: auto; /* Changed from 0px */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 24px;
-    padding-right: 32px;
-    padding-bottom: 24px;
-    padding-left: 32px;
+    padding: 24px 20px; /* Simplified padding with responsive horizontal padding */
 }
-
 
 .FooterLeft {
     display: flex;
     align-items: center;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 #FooterLeftParagraph {
@@ -350,7 +365,7 @@ input::placeholder {
     height: auto;
     font-family: 'Inter';
     font-weight: 400;
-    font-style: Regular;
+    font-style: normal;
     font-size: 13px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -362,7 +377,7 @@ input::placeholder {
     height: auto;
     font-family: 'Inter';
     font-weight: 400;
-    font-style: Regular;
+    font-style: normal;
     font-size: 13px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -376,29 +391,13 @@ input::placeholder {
     align-items: center;
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 #Link1 {
-    width: 120px;
-    height: 16px;
     font-family: 'Inter';
     font-weight: 400;
-    font-style: Regular;
-    font-size: 13px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: 0%;
-    color:#0266D6;
-}
-
-#Link2 {
-    width: 86px;
-    height: 16px;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-style: Regular;
+    font-style: normal;
     font-size: 13px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -406,15 +405,90 @@ input::placeholder {
     text-decoration-style: solid;
     text-decoration-thickness: 0%;
     color: #0266D6;
+    white-space: nowrap;
+}
+
+#Link2 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    color: #0266D6;
+    white-space: nowrap;
 }
 
 #passwordViwer {
     width: 24px;
     height: 24px;
-    transform: translate(720px,-50px);
+    position: absolute; /* Changed from transform to proper positioning */
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 #emailError,
 #passwordError {
     color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+    .lowerForm input  {
+        min-width: 320px;
+    }
+
+    body {
+        padding: 10px;
+    }
+    
+    .MainDiv {
+        gap: 32px;
+        padding: 0 10px;
+    }
+    
+    .MainDivInnerDiv {
+        gap: 80px;
+    }
+    
+    .Lower-Div {
+        gap: 32px;
+    }
+    
+    .LowerDivTopInnerDiv {
+        gap: 32px;
+    }
+    
+    .Footer {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+    
+    .FooterLeft,
+    .FooterRight {
+        justify-content: center;
+    }
+    
+    #SignUpHeading {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .MainDiv {
+        padding: 0 5px;
+    }
+    
+    body {
+        padding: 5px;
+    }
 }

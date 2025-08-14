@@ -1,3 +1,64 @@
+@font-face {
+    font-family: 'Lato';
+    src: url(./Fonts/Lato-Black.ttf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./Fonts/Lato-BlackItalic.ttf) format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./Fonts/Lato-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./Fonts/Lato-BoldItalic.ttf) format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./Fonts/Lato-Hairline.ttf) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./Fonts/Lato-HairlineItalic.ttf) format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./Fonts/Lato-Italic.ttf) format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./Fonts/Lato-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./Fonts/Lato-LightItalic.ttf) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./Fonts/Lato-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -30,7 +91,7 @@ body {
 #NavBarLowerDivHeading1 {
     width: 298px;
     height: 71px;
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 800;
     font-size: 48px;
     line-height: 100%;
@@ -39,7 +100,7 @@ body {
 }
 
 #spanWordHeading1 {
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 800;
     font-size: 48px;
     line-height: 100%;
@@ -55,7 +116,7 @@ body {
 #NavBarNavLink2 {
     width: 252px;
     height: 34px;
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 700;
     font-style: Bold;
     font-size: 28px;
@@ -79,7 +140,7 @@ body {
     height: 82px;
     border-radius: 30px;
     background: #FFA800;
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 700;
     font-style: Bold;
     font-size: 32px;
@@ -111,7 +172,7 @@ body {
 #Section1LeftDivHeading1 {
     width: 804px;
     height: 229px;
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 900;
     font-style: Black;
     font-size: 84px;
@@ -130,7 +191,7 @@ body {
 #Section1LeftInnerDiv1Text1 {
     width: 125px;
     height: 29px;
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 900;
     font-style: Black;
     font-size: 20px;
@@ -185,7 +246,7 @@ body {
 #Section1LeftInnerDiv2Text1 {
     width: 183px;
     height: 38px;
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 700;
     font-style: Bold;
     font-size: 28px;
@@ -204,7 +265,7 @@ body {
 #Section1LeftInnerDiv2Date {
     width: 261px;
     height: 38px;
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 700;
     font-style: Bold;
     font-size: 28px;
@@ -259,7 +320,7 @@ body {
 #Section1RightDivText1 {
     width: 230px;
     height: 98px;
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 900;
     font-size: 64px;
     line-height: 100%;
@@ -269,7 +330,7 @@ body {
 }
 
 #Section1RightDivspan {
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 400;
     font-size: 40px;
     line-height: 100%;
@@ -305,7 +366,7 @@ body {
 #Section2Heading1 {
     width: 887px;
     height: 106px;
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 700;
     font-style: Bold;
     font-size: 74px;
@@ -322,7 +383,7 @@ body {
 }
 
 #Section2Spam1 {
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 700;
     font-style: Bold;
     font-size: 74px;
@@ -366,7 +427,7 @@ body {
 }
 
 #Section2Div1Heading {
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 700;
     font-style: Bold;
     font-size: 36px;
@@ -377,7 +438,7 @@ body {
 }
 
 #Section2Div1text {
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
@@ -387,7 +448,7 @@ body {
 }
 
 #Section2Div2Heading {
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 700;
     font-style: Bold;
     font-size: 36px;
@@ -398,7 +459,7 @@ body {
 }
 
 #Section2Div2text {
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
@@ -408,7 +469,7 @@ body {
 }
 
 #Section2Div3Heading {
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 700;
     font-style: Bold;
     font-size: 36px;
@@ -419,7 +480,7 @@ body {
 }
 
 #Section2Div3text {
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
@@ -443,7 +504,7 @@ body {
 #Section3Heading1 {
     width: 864px;
     height: 88px;
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 700;
     font-style: Bold;
     font-size: 74px;
@@ -454,7 +515,7 @@ body {
 }
 
 #Section3Span1 {
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 700;
     font-style: Bold;
     font-size: 74px;
@@ -517,7 +578,7 @@ body {
 }
 
 #Section3Div1Text1 {
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 700;
     font-style: Bold;
     font-size: 20px;
@@ -529,7 +590,7 @@ body {
 #Section3Div1Heading {
     width: 221px;
     height: 48px;
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 700;
     font-style: Bold;
     font-size: 36px;
@@ -547,7 +608,7 @@ body {
 #Section3Div1Text2 {
     width: 397px;
     height: 24px;
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 600;
     font-size: 20px;
     line-height: 100%;
@@ -583,7 +644,7 @@ body {
 #Section4Heading1 {
     width: 1076px;
     height: 145px;
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 700;
     font-style: Bold;
     font-size: 74px;
@@ -594,7 +655,7 @@ body {
 }
 
 #Section4Span1 {
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 700;
     font-style: Bold;
     font-size: 74px;
@@ -656,7 +717,7 @@ body {
     height: 46px;
     border-radius: 20px;
     background: #FFA800;
-    font-family: Lato;
+    font-family: 'Lato';
     font-weight: 700;
     font-style: Bold;
     font-size: 20px;

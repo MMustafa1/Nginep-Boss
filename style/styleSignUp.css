@@ -1,8 +1,21 @@
+/* Add this at the top to prevent horizontal scroll */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
+    min-height: 100vh; /* Changed from 200vh to min-height: 100vh */
+    padding: 20px; /* Add some padding for mobile */
 }
 
 @font-face {
@@ -125,14 +138,19 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1400px;
+    max-width: 800px; /* Reduced from 1400px */
     gap: 64px;
+    padding: 0 20px; /* Add horizontal padding */
 }
 
 .MainDivInnerDiv {
     display: flex;
+    min-height: 100vh; /* Changed from height to min-height */
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 169px;
+    width: 100%;
 }
 
 .Lower-Div {
@@ -141,28 +159,32 @@ body {
     justify-content: center;
     align-items: center;
     gap: 48px;
+    width: 100%;
 }
 
 .LowerDivTopInnerDiv {
     display: flex;
     flex-direction: column;
     gap: 64px;
+    width: 100%;
 }
 
 .LowerDivMainDiv1 {
     display: flex;
     flex-direction: column;
     gap: 48px;
+    width: 100%;
 }
 
 #SignUpHeading {
-    width: 754px;
-    height: 39px;
+    width: 100%; /* Changed from fixed 754px */
+    max-width: 754px;
+    height: auto; /* Changed from fixed height */
     font-family: 'Inter';
     font-weight: 600;
     font-style:Bold;
-    font-size: 32px;
-    line-height: 100%;
+    font-size: clamp(24px, 4vw, 32px); /* Responsive font size */
+    line-height: 120%;
     letter-spacing: 0%;
     text-align: center;
     color: #000000;
@@ -170,15 +192,13 @@ body {
 
 #LowerDivButton1 {
     cursor: pointer;
-    width: 754px;
+    width: 100%; /* Changed from fixed 754px */
+    max-width: 754px;
     height: 48px;
     gap: 8px;
     border-radius: 8px;
     border-width: 1px;
-    padding-top: 8px;
-    padding-right: 24px;
-    padding-bottom: 8px;
-    padding-left: 24px;
+    padding: 8px 24px; /* Simplified padding */
     background: #F5F5F5;
     border: 1px solid #00000033;
     box-shadow: 0px 1px 3px 0px #00000026;
@@ -204,14 +224,15 @@ body {
 
 .LowerDivInnerDiv {
     display: flex;
-    width: 754px;
+    width: 100%; /* Changed from fixed 754px */
+    max-width: 754px;
     height: 18px;
     gap: 16px;
+    align-items: center;
 }
 
 #DivSpan {
-    width: 230px;
-    height: 18px;
+    flex: 0 0 auto;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 15px;
@@ -219,6 +240,7 @@ body {
     letter-spacing: 0%;
     text-align: center;
     color:black;
+    white-space: nowrap;
 }
 
 #linkDivSpan {
@@ -236,15 +258,16 @@ body {
 
 #LineBefore,
 #LineAfter {
-    width: 249.5PX;   
+    flex: 1; /* Changed from fixed width */
     height: 0px;
     border-width: 1px;
     border: 1px solid #0000001A;
 }
 
 label {
-    width: 754px;
-    height: 18px;
+    width: 100%; /* Changed from fixed 754px */
+    max-width: 754px;
+    height: auto; /* Changed from fixed height */
     font-family: 'Inter';
     font-weight: 600;
     font-style: Bold;
@@ -256,42 +279,37 @@ label {
 }
 
 .NameForm input {
-    width: 335px;
+    width: 100%; /* Changed from fixed 335px */
     height: 48px;
     border-radius: 8px;
     border-width: 1px;
-    padding-top: 8px;
-    padding-right: 16px;
-    padding-bottom: 8px;
-    padding-left: 16px;
+    padding: 8px 16px; /* Simplified padding */
     background: #FFFFFF;
-    border: 1px solid #C1C1C1
+    border: 1px solid #C1C1C1;
 }
 
 .lowerForm input {
-    width: 725px;
+    width: 100%; /* Changed from fixed 725px */
     height: 48px;
     border-radius: 8px;
     border-width: 1px;
-    padding-top: 8px;
-    padding-right: 16px;
-    padding-bottom: 8px;
-    padding-left: 16px;
+    padding: 8px 16px; /* Simplified padding */
     background: #FFFFFF;
-    border: 1px solid #C1C1C1
+    border: 1px solid #C1C1C1;
 }
 
 .lowerForm {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 
 form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 760px;
+    max-width: 754px;
     gap: 20px;
 }
 
@@ -305,19 +323,18 @@ form {
 .NameLabel,
 .SurnameLabel {
     flex: 1;
-    min-width: 150px;
+    min-width: 250px; /* Increased for better mobile experience */
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
 #SpanTerms {
-    width: 330px;
-    height: 18px;
+    flex: 1;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 15px;
-    line-height: 100%;
+    line-height: 120%;
     letter-spacing: 0%;
     text-align:left;
     margin: 0px;
@@ -340,6 +357,7 @@ form {
 #checkbox {
     width: 24px;
     height: 24px;
+    flex-shrink: 0;
 }
 
 .PhoneNoDiv,
@@ -348,24 +366,24 @@ form {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
 }
 
 .CheckBoxDiv {
     display: flex;
-    gap: 0px;
-    align-items: center;
+    gap: 12px;
+    align-items: flex-start;
+    width: 100%;
 }
 
 #LowerDivButton2 {
-    width: 754px;
+    width: 100%; /* Changed from fixed 754px */
+    max-width: 754px;
     height: 48px;
     gap: 8px;
     border-radius: 8px;
     border-width: 1px;
-    padding-top: 8px;
-    padding-right: 24px;
-    padding-bottom: 8px;
-    padding-left: 24px;
+    padding: 8px 24px; /* Simplified padding */
     opacity: 0.2;
     background: #0EAF52;
     border: 1px solid #00000033;
@@ -377,12 +395,10 @@ form {
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
-    columns:#FFFFFF;
+    color:#FFFFFF;
 }
 
 input::placeholder {
-    width: 335px;
-    height: 18px;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 15px;
@@ -392,22 +408,20 @@ input::placeholder {
 }
 
 .Footer {
-    width: 1440px;
-    height: 0px;
+    width: 100%;
+    max-width: 1440px;
+    height: auto; /* Changed from 0px */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 24px;
-    padding-right: 32px;
-    padding-bottom: 24px;
-    padding-left: 32px;
+    padding: 24px 20px; /* Simplified padding with responsive horizontal padding */
 }
-
 
 .FooterLeft {
     display: flex;
     align-items: center;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 #FooterLeftParagraph {
@@ -439,11 +453,10 @@ input::placeholder {
     align-items: center;
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 #Link1 {
-    width: 120px;
-    height: 16px;
     font-family: 'Inter';
     font-weight: 400;
     font-style: Regular;
@@ -454,11 +467,10 @@ input::placeholder {
     text-decoration-style: solid;
     text-decoration-thickness: 0%;
     color:#0266D6;
+    white-space: nowrap;
 }
 
 #Link2 {
-    width: 86px;
-    height: 16px;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 13px;
@@ -468,8 +480,8 @@ input::placeholder {
     text-decoration-style: solid;
     text-decoration-thickness: 0%;
     color: #0266D6;
+    white-space: nowrap;
 }
-
 
 #nameError,
 #surNameError,
@@ -477,10 +489,65 @@ input::placeholder {
 #emailError,
 #passwordError {
     color: red;
+    font-size: 14px;
+    margin-top: 4px;
 }
 
 #passwordViwer {
     width: 24px;
     height: 24px;
-    transform: translate(720px,-50px);
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Add responsive design for mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .MainDiv {
+        gap: 32px;
+        padding: 0 10px;
+    }
+    
+    .MainDivInnerDiv {
+        gap: 80px;
+    }
+    
+    .Lower-Div {
+        gap: 32px;
+    }
+    
+    .LowerDivTopInnerDiv {
+        gap: 32px;
+    }
+    
+    .NameForm {
+        flex-direction: column;
+    }
+    
+    .NameLabel,
+    .SurnameLabel {
+        min-width: 100%;
+    }
+    
+    .Footer {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+    
+    .FooterLeft,
+    .FooterRight {
+        justify-content: center;
+    }
+}
+
+/* Position password viewer relative to its input */
+.PasswordDiv {
+    position: relative;
 }
