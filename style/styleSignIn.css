@@ -3,7 +3,6 @@ body {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    font-family: 'Inter';
 }
 
 @font-face {
@@ -211,11 +210,10 @@ body {
 }
 
 #DivSpan {
-    width: 223px;
+    width: 230px;
     height: 18px;
     font-family: 'Inter';
     font-weight: 400;
-    font-style: Regular;
     font-size: 15px;
     line-height: 100%;
     letter-spacing: 0%;

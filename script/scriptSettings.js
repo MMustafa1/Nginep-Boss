@@ -118,3 +118,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fetchUserDataAndPopulateForm(userId);
 });
+
+let Logout=document.getElementById("Logout");
+
+Logout.addEventListener("click", () => {
+    localStorage.clear();
+    window.location.href="../Pages/SignIn.html";
+});

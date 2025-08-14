@@ -20,6 +20,10 @@ body {
     gap: 32px;
 }
 
+#AddNewButtonMainDiv {
+    display: none;
+}
+
 .AsiderInnerDiv1 {
     display: flex;
     width: 440px;
@@ -43,7 +47,6 @@ body {
 
 .AsiderInnerDiv2 {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 440px;
     height: 64px;
@@ -54,11 +57,13 @@ body {
 }
 
 #AsiderImg3 {
+    transform: translateX("20px");
     width: 28px;
     height: 28px;
 }
 
 #AsiderText1 {
+    transform: translateX("20px");
     width: 332px;
     height: 24px;
     font-family: Poppins;
@@ -72,7 +77,6 @@ body {
 
 .AsiderInnerDiv3 {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 440px;
     height: 64px;
@@ -83,11 +87,13 @@ body {
 }
 
 #AsiderImg4 {
+    transform: translateX("20px");
     width: 24px;
     height: 24px;
 }
 
 #AsiderText2 {
+    transform: translateX("20px");
     width: 332px;
     height: 24px;
     font-family: Poppins;
@@ -173,14 +179,15 @@ body {
     gap: 40px;
     display: flex;
     width: 996px;
-    height: 1204px;
+    height: auto;
     background: #FFFFFF;
+    align-items: flex-start;
 }
 
 .DashBoardBottomInnerDiv1 {
     transform:translateX(20px) ;
     width: 300px;
-    height: 872px;
+    height: auto;
     border-radius: 30px;
     background: #EFEFEF;
 }
@@ -188,7 +195,7 @@ body {
 .DashBoardBottomInnerMainDiv2 {
     transform:translateX(20px) ;
     width: 300px;
-    height: 632px;
+    height: auto;
     border-radius: 30px;
     background: #EFEFEF;
 }
@@ -196,7 +203,7 @@ body {
 .DashBoardBottomInnerMainDiv3 {
     transform:translateX(20px) ;
     width: 300px;
-    height: 632px;
+    height: auto;
     border-radius: 30px;
     background: #EFEFEF;
 }
@@ -317,4 +324,63 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#items {
+    width: 754px;
+    height: 18px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-size: 20px;
+    color:#000000;
+}
+
+#items:focus,
+#itemsInput:focus,
+#imageInput:focus {
+    outline: none;
+}
+
+#itemsInput,
+#imageInput {
+    width: 554px;
+    font-size: 20px;
+    height: 40px;
+    gap: 8px;
+    border-radius: 8px;
+    border-width: 1px;
+    background: #FFFFFF;
+    border: 1px solid #C1C1C1;
+}
+
+.DashBoardBottomButton {
+    transform: translate(-100px,20px);
+    width: 300px;
+    height: 48px;
+    opacity: 0.15;
+    border-radius: 8px;
+    background: #000000;
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+    cursor: pointer;
+}
+
+#ProgressButton,
+#DoneButton {
+    background-color: transparent;
+    transform: translate(-40px,-5px);
+    border-style: none;
+    font-size: 16px;
+}
+
+#DoneButton {
+    transform: translate(-90px,-5px);
 }

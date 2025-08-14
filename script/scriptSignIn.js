@@ -20,7 +20,7 @@ function Login(email,password) {
         return;
     }
 
-    fetch(`http://localhost:3000/users?email=${encodeURIComponent(email)}`)
+    fetch(`http://localhost:3000/users?EmailAddress=${encodeURIComponent(email)}`)
     .then(response => response.json())
     .then (data=> {
         if(data.length ===0) {
